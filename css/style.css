@@ -422,6 +422,10 @@ template {
   text-decoration: none;
 }
 
+.navbar-menu__link:hover {
+  color: #1565D8;
+}
+
 .navbar-menu__primary {
   font-weight: bold;
   text-align: center;
@@ -432,10 +436,13 @@ template {
   margin-right: 0;
 }
 
+.navbar-menu__primary:hover {
+  background-color: #d6e5de;
+}
+
 .banner-container {
   display: flex;
   align-items: center;
-  max-width: 1280px;
   height: 700px;
 }
 
@@ -443,11 +450,11 @@ template {
   display: flex;
   margin: auto;
   align-items: center;
+  max-width: 1280px;
   background-image: url(../img/header-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 80px 120px 80px;
 }
 
 .banner-info {
@@ -457,7 +464,18 @@ template {
 }
 
 .banner-text__subtitle {
+  width: 178px;
+  height: 32px;
+  padding: 6px 16px;
+  border-radius: 2000px;
   margin-bottom: 28px;
+  color: #36B37E;
+  background-color: #d6e5de;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .banner-text__title {
@@ -480,7 +498,9 @@ template {
 }
 
 .banner__button {
-  min-width: 233px;
+  display: flex;
+  justify-content: center;
+  width: 233px;
   padding: 16px 24px;
   margin-bottom: 48px;
   background-color: #183B56;
@@ -494,8 +514,13 @@ template {
 }
 
 .banner__button-link {
+  display: flex;
   text-decoration: none;
   color: inherit;
+}
+
+.banner__button:hover {
+  background-color: #1565D8;
 }
 
 .advantages {
@@ -606,6 +631,9 @@ template {
   .header-container {
     max-width: 900px;
   }
+  .banner-wrapper {
+    max-width: 992px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -617,9 +645,6 @@ template {
   }
   .banner-wrapper {
     background-image: url(../img/header-image-768.jpg);
-    margin: 0 20px 80px 20px;
-  }
-  .banner-container {
     max-width: 728px;
     min-height: 624px;
   }
@@ -687,13 +712,16 @@ template {
     height: 2.2px;
     background-color: #3A4C66;
   }
+  .banner-wrapper {
+    height: 624px;
+  }
 }
 
 @media (max-width: 650px) {
   .header-container {
     max-width: 500px;
   }
-  .banner-container {
+  .banner-wrapper {
     max-width: 570px;
   }
 }
@@ -703,7 +731,7 @@ template {
     max-width: 400px;
     margin-bottom: 24px;
   }
-  .banner-container {
+  .banner-wrapper {
     max-width: 470px;
   }
   .advantages__text {
@@ -722,10 +750,8 @@ template {
     background-position: top;
     margin-left: 0;
     margin-right: 0;
-  }
-  .banner-container {
     width: 100%;
-    height: 899px;
+    height: 884px;
   }
   .banner-info {
     display: flex;
@@ -737,9 +763,11 @@ template {
     margin-right: 20px;
   }
   .banner-text__subtitle {
-    width: 196px;
-    height: 24px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 24px;
+    width: 198px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
   .banner-text__title {
     font-size: 32px;

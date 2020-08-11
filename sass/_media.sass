@@ -2,6 +2,9 @@
   .header
     &-container
       max-width: 900px
+  .banner
+    &-wrapper      
+      max-width: 992px
 @media (max-width: 992px)
   .header
     &-container
@@ -12,10 +15,10 @@
   .banner
     &-wrapper
       background-image: url(../img/header-image-768.jpg)
-      margin: 0 20px 80px 20px
-    &-container
       max-width: 728px
       min-height: 624px
+    &-container
+
 
     &-info
       margin-left: 28px
@@ -75,13 +78,15 @@
         width: 22px
         height: 2.2px
         background-color: #3A4C66
-  
+  .banner
+    &-wrapper
+      height: 624px
 @media ( max-width: 650px )
   .header
     &-container
       max-width: 500px
   .banner
-    &-container
+    &-wrapper
       max-width: 570px
 
 @media ( max-width: 576px )
@@ -90,7 +95,7 @@
       max-width: 400px
       margin-bottom: 24px
   .banner
-    &-container
+    &-wrapper
       max-width: 470px
   .advantages
     &__text 
@@ -107,9 +112,10 @@
       background-position: top
       margin-left: 0
       margin-right: 0
-    &-container
       width: 100%
-      height: 899px
+      height: 884px
+    &-container
+
     &-info
       display: flex
       text-align: center
@@ -121,9 +127,11 @@
 
     &-text
       &__subtitle
-        width: 196px
-        height: 24px
-        margin-bottom: 20px
+        margin: auto
+        margin-bottom: 24px
+        width: 198px
+        padding-left: 26px
+        padding-right: 26px
       &__title
         font-size: 32px
         line-height: 40px

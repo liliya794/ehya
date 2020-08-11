@@ -38,6 +38,8 @@
     &__text
       margin-right: 20px
 @media (max-width: 768px)
+  body
+    padding-top: 102px
   .header
     &-container
       max-width: 650px
@@ -46,6 +48,13 @@
       margin-top: 8px
       margin-bottom: 30px
   .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
     &-menu
       display: none
     &__menu

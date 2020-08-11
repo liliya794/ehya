@@ -368,7 +368,7 @@ template {
 }
 
 .header {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .header-container {
@@ -394,7 +394,7 @@ template {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .navbar__menu-button {
@@ -521,6 +521,85 @@ template {
   font-size: 16px;
   line-height: 20px;
   color: #183B56;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transperent;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 36px 24px;
+  z-index: 101;
+  width: 97%;
+  border-color: black solid 1px;
+  color: #183B56;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+  background-color: #ffffff;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.modal__link {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #183B56;
+}
+
+.modal__primary {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1565D8;
+  border: 2px solid #1565D8;
+  border-radius: 8px;
+  padding: 9px 86px;
+  margin: 0;
+}
+
+.modal__close {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 1200px) {

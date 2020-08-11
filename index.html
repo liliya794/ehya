@@ -40,7 +40,7 @@
               <a href="#" class="navbar-menu__link">Get it now</a>
             </li>
           </ul>
-          <button class="menu-button navbar__menu-button">
+          <button data-toggle="modal" class="menu-button navbar__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
@@ -111,5 +111,27 @@
       <!-- /.banner-wrapper -->
     </div>
     <!-- /.banner -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <div class="modal-wrapper">
+          <a href="#" class="modal__link">Home</a>
+          <a href="#" class="modal__link">Landings</a>
+          <a href="#" class="modal__link">Pages</a>
+          <a href="#" class="modal__link">Docs</a>
+          <a href="#" class="modal__link">Help</a>
+          <a href="#" class="modal__link modal__primary">Get it now</a>
+        </div>
+        <!-- /.modal-wrapper -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,72 @@
+.banner
+  &-container
+    display: flex
+    align-items: center
+    max-width: 1280px
+    height: 700px
+  &-wrapper
+    display: flex
+    margin: auto
+    align-items: center
+    background-image: url(../img/header-image.jpg)
+    // Что бы картинка выровнялась по центру 
+    background-position: center
+    background-repeat: no-repeat
+    // картинка подстраивается под ширину страницы:
+    background-size: cover
+    margin: 0 80px 120px 80px
+  &-info
+    margin-top: 62px
+    margin-left: 107px
+    margin-bottom: 46px
+  &-text
+    &__subtitle
+      margin-bottom: 28px
+    &__title
+      max-width: 474px
+      font-family: HKGrotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 56px
+      color: $primary
+      margin: 0 0 28px 0
+    &__description
+      max-width: 652px
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      margin: 0 0 52px 0
+  &__button
+    min-width: 233px
+    padding: 16px 24px
+    margin-bottom: 48px
+    background-color: $primary
+    border-radius: 8px
+    border: none
+    color: #ffffff
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    &-link
+      text-decoration: none
+      color: inherit
+.advantages
+  display: flex
+  &__item
+    display: flex
+    align-items: center
+  &__icon
+    width: 36px
+    height: 36px
+    margin-right: 8px
+  &__text
+    margin-right: 30px
+    font-family: HKGrotesk
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+    color: $primary
+

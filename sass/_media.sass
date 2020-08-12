@@ -3,42 +3,44 @@
     &-container
       max-width: 900px
   .banner
+    &-container
+      width: 100%
     &-wrapper      
       max-width: 992px
   .collection
-    padding-top: 80px
-    padding-bottom: 80px
     &-container
-      flex-direction: column
+      max-width: 95%
     &-image
-      justify-content: center
-    &-info
-      display: flex
-      flex-direction: column
-      align-items: center
-      &__text
-        margin-top: 40px
-      &__description
-        max-width: 672px
-        margin-bottom: 30px
+      width: 57%
   .trending
     &-container
       max-width: 950px
   .card
     &-item
       &__image
-        width: 200px
-        height: 300px
+        width: 234px
+        height: 310px
       &__more
-        width: 200px
-        height: 300px
+        width: 234px
+        height: 310px
 @media (max-width: 992px)
   .header
     &-container
-      max-width: 750px
+      max-width: 650px
       padding: 0
       margin-top: 8px
       margin-bottom: 30px
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: inherit
+      &__primary
+        padding: 13px 14px
+        &:hover
+          background-color: #ffffff
+      &__item
+        margin-right: 20px
   .banner
     &-wrapper
       background-image: url(../img/header-image-768.jpg)
@@ -62,9 +64,28 @@
         line-height: 32px
     &__button
       margin-bottom: 40px
+      &:hover
+        background-color: $primary
   .advantages
     &__text
       margin-right: 20px
+  .collection
+    padding-top: 80px
+    padding-bottom: 80px
+    &-container
+      flex-direction: column
+    &-image
+      width: 100%
+      justify-content: center
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__text
+        margin-top: 40px
+      &__description
+        max-width: 672px
+        margin-bottom: 30px
   .trending
     &-container
       padding-bottom: 80px
@@ -133,6 +154,15 @@
     &-image
       &__right
         height: 490px
+  .tabs
+    &__item
+      margin-right: 28px
+  .card
+    &-item
+      &-price
+        margin-left: 7px
+      &__cart
+        margin-right: 10px
   .reviews
     &-container
       max-width: 630px
@@ -178,12 +208,129 @@
     &__text 
       margin-right: 15px
   .collection
+    &-container
+      max-width: 470px
+  .trending
+    &-container
+      padding-bottom: 48px
+      max-width: 470px
+  //   &-info
+  //     &__text
+  //       font-size: 28px
+  //       line-height: 36px
+  // .tabs
+  //   &__item
+  //     font-size: 16px
+  //     line-height: 22px
+  //     margin-right: 11px
+
+  .cards
+    justify-content: center
+  //   &-item 
+  //     min-height: 234px
+  //     margin-top: 20px
+  //     &__more 
+  //       width: 140px
+  //       height: 170px
+  //       &-text
+  //         font-size: 20px
+  //         line-height: 24px
+  //       &-image
+  //         width: 25px
+  //         height: 32px
+  //         margin-bottom: 21px
+  //     &-price
+  //       font-size: 14px
+  //       line-height: 24px
+  //       margin-right: 9px
+  //     &__image
+  //       width: 140px
+  //       height: 170px
+  //       margin-bottom: 13px
+  //     &__title
+  //       font-size: 16px
+  //       line-height: 20px
+  //       margin-bottom: 3px
+  //     &__cart
+  //       width: 14px
+  //       height: 32px
+  .reviews
+    &-container
+      max-width: 470px
+@media ( max-width: 480px )
+  body 
+    padding-top: 88px
+  .header
+    &-container
+      max-width: 272px
+      height: 64px
+      margin-top: 0px
+  .banner
+    &-wrapper
+      background-image: url(../img/header-image-320.jpg)
+      background-position: top
+      margin-left: 0
+      margin-right: 0
+      width: 100%
+      height: 884px
+      border-radius: 0
+      max-width: 480px
+
+    &-info
+      display: flex
+      text-align: center
+      flex-direction: column
+      margin-top: 381px
+      margin-bottom: 20px
+      margin-left: 20px
+      margin-right: 20px
+
+    &-text
+      &__subtitle
+        margin: auto
+        margin-bottom: 24px
+        width: 198px
+        padding-left: 26px
+        padding-right: 26px
+      &__title
+        font-size: 32px
+        line-height: 40px
+        margin-bottom: 20px
+      &__description
+        text-align: center
+        width: 100%
+        margin-bottom: 24px
+        font-size: 16px
+        line-height: 28px
+    &__button
+      margin: auto
+      max-width: 233px
+      font-size: 16px
+      line-height: 22px
+      padding: 13px 24px
+      margin-bottom: 22px
+  .advantages
+    flex-wrap: wrap
+    justify-content: center
+    max-width: 320px
+    margin: auto
+    &__item
+      margin-bottom: 16px
+    &__icon
+      width: 25px
+      height: 25px
+    &__text
+      font-size: 16px
+      line-height: 20px
+      margin-right: 16px
+  .collection
     padding-top: 64px
     padding-bottom: 64px
     &-container
       align-items: center
 
     &-image
+      width: auto
       flex-direction: column
       height: 411px
       &__right
@@ -226,8 +373,8 @@
         margin-left: 30px
   .trending
     &-container
+      max-width: 290px
       padding-bottom: 48px
-      max-width: 320px
     &-info
       &__text
         font-size: 28px
@@ -237,11 +384,15 @@
       font-size: 16px
       line-height: 22px
       margin-right: 11px
-
+      margin-left: 0
+  .cards
+    justify-content: space-between
   .card
     &-item 
       min-height: 234px
       margin-top: 20px
+      &-price
+        margin-left: 0
       &__more 
         width: 140px
         height: 170px
@@ -252,10 +403,16 @@
           width: 25px
           height: 32px
           margin-bottom: 21px
+      &__title
+        margin-left: 0
       &-price
         font-size: 14px
         line-height: 24px
         margin-right: 9px
+      &__price
+        &-block
+          justify-content: start
+          align-items: center
       &__image
         width: 140px
         height: 170px
@@ -267,79 +424,16 @@
       &__cart
         width: 14px
         height: 32px
-  .reviews
-    &-container
-      max-width: 470px
-@media ( max-width: 480px )
-  .header
-    &-container
-      max-width: 272px
-      height: 64px
-      margin-top: 0px
-  .banner
-    &-wrapper
-      background-image: url(../img/header-image-320.jpg)
-      background-position: top
-      margin-left: 0
-      margin-right: 0
-      width: 100%
-      height: 884px
-
-    &-info
-      display: flex
-      text-align: center
-      flex-direction: column
-      margin-top: 381px
-      margin-bottom: 20px
-      margin-left: 20px
-      margin-right: 20px
-
-    &-text
-      &__subtitle
-        margin: auto
-        margin-bottom: 24px
-        width: 198px
-        padding-left: 26px
-        padding-right: 26px
-      &__title
-        font-size: 32px
-        line-height: 40px
-        margin-bottom: 20px
-      &__description
-        text-align: center
-        width: 100%
-        margin-bottom: 24px
-        font-size: 16px
-        line-height: 28px
-    &__button
-      margin: auto
-      max-width: 233px
-      font-size: 16px
-      line-height: 22px
-      padding: 13px 24px
-      margin-bottom: 22px
-  .advantages
-    flex-wrap: wrap
-    justify-content: center
-    &__item
-      margin-bottom: 16px
-    &__icon
-      width: 14.7px
-      height: 14.7px
-    &__text
-      font-size: 16px
-      line-height: 20px
-      margin-right: 16px
-  .trending
-    &-container
-      padding-bottom: 48px
-      max-width: 290px
-  .card
-    &-item
-      &__price
-        &-block
-          justify-content: start
-          align-items: center
+  // .trending
+  //   &-container
+  //     padding-bottom: 48px
+  //     max-width: 290px
+  // .card
+  //   &-item
+  //     &__price
+  //       &-block
+  //         justify-content: start
+  //         align-items: center
   .reviews
     &-container
       max-width: 310px

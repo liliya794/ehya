@@ -463,6 +463,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 8px;
 }
 
 .banner-info {
@@ -577,6 +578,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
+  height: 490px;
 }
 
 .collection-image__big {
@@ -668,7 +670,7 @@ template {
 }
 
 .tabs__item {
-  margin-right: 38px;
+  margin-left: 38px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -702,11 +704,12 @@ template {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  line-height: 32p;
+  line-height: 32px;
+  margin-left: 14px;
 }
 
 .card-item__image {
-  width: 250px;
+  width: 260px;
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
@@ -718,7 +721,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
+  width: 260px;
   height: 350px;
   border-radius: 8px;
   background-color: #1565D8;
@@ -757,11 +760,13 @@ template {
   font-weight: normal;
   font-size: 20px;
   line-height: 36px;
+  margin-left: 14px;
 }
 
 .card-item__cart {
   width: 23px;
   height: 32px;
+  cursor: pointer;
 }
 
 .reviews-container {
@@ -895,50 +900,49 @@ template {
   .header-container {
     max-width: 900px;
   }
+  .banner-container {
+    width: 100%;
+  }
   .banner-wrapper {
     max-width: 992px;
   }
-  .collection {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
   .collection-container {
-    flex-direction: column;
+    max-width: 95%;
   }
   .collection-image {
-    justify-content: center;
-  }
-  .collection-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .collection-info__text {
-    margin-top: 40px;
-  }
-  .collection-info__description {
-    max-width: 672px;
-    margin-bottom: 30px;
+    width: 57%;
   }
   .trending-container {
     max-width: 950px;
   }
   .card-item__image {
-    width: 200px;
-    height: 300px;
+    width: 234px;
+    height: 310px;
   }
   .card-item__more {
-    width: 200px;
-    height: 300px;
+    width: 234px;
+    height: 310px;
   }
 }
 
 @media (max-width: 992px) {
   .header-container {
-    max-width: 750px;
+    max-width: 650px;
     padding: 0;
     margin-top: 8px;
     margin-bottom: 30px;
+  }
+  .navbar-menu__link:hover {
+    color: inherit;
+  }
+  .navbar-menu__primary {
+    padding: 13px 14px;
+  }
+  .navbar-menu__primary:hover {
+    background-color: #ffffff;
+  }
+  .navbar-menu__item {
+    margin-right: 20px;
   }
   .banner-wrapper {
     background-image: url(../img/header-image-768.jpg);
@@ -966,8 +970,34 @@ template {
   .banner__button {
     margin-bottom: 40px;
   }
+  .banner__button:hover {
+    background-color: #183B56;
+  }
   .advantages__text {
     margin-right: 20px;
+  }
+  .collection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .collection-container {
+    flex-direction: column;
+  }
+  .collection-image {
+    width: 100%;
+    justify-content: center;
+  }
+  .collection-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection-info__text {
+    margin-top: 40px;
+  }
+  .collection-info__description {
+    max-width: 672px;
+    margin-bottom: 30px;
   }
   .trending-container {
     padding-bottom: 80px;
@@ -1042,6 +1072,15 @@ template {
   .collection-image__right {
     height: 490px;
   }
+  .tabs__item {
+    margin-right: 28px;
+  }
+  .card-item-price {
+    margin-left: 7px;
+  }
+  .card-item__cart {
+    margin-right: 10px;
+  }
   .reviews-container {
     max-width: 630px;
   }
@@ -1093,6 +1132,94 @@ template {
   .advantages__text {
     margin-right: 15px;
   }
+  .collection-container {
+    max-width: 470px;
+  }
+  .trending-container {
+    padding-bottom: 48px;
+    max-width: 470px;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .reviews-container {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 88px;
+  }
+  .header-container {
+    max-width: 272px;
+    height: 64px;
+    margin-top: 0px;
+  }
+  .banner-wrapper {
+    background-image: url(../img/header-image-320.jpg);
+    background-position: top;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 884px;
+    border-radius: 0;
+    max-width: 480px;
+  }
+  .banner-info {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 381px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .banner-text__subtitle {
+    margin: auto;
+    margin-bottom: 24px;
+    width: 198px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  .banner-text__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .banner-text__description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .banner__button {
+    margin: auto;
+    max-width: 233px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 13px 24px;
+    margin-bottom: 22px;
+  }
+  .advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 320px;
+    margin: auto;
+  }
+  .advantages__item {
+    margin-bottom: 16px;
+  }
+  .advantages__icon {
+    width: 25px;
+    height: 25px;
+  }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 16px;
+  }
   .collection {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -1101,6 +1228,7 @@ template {
     align-items: center;
   }
   .collection-image {
+    width: auto;
     flex-direction: column;
     height: 411px;
   }
@@ -1153,8 +1281,8 @@ template {
     margin-left: 30px;
   }
   .trending-container {
+    max-width: 290px;
     padding-bottom: 48px;
-    max-width: 320px;
   }
   .trending-info__text {
     font-size: 28px;
@@ -1164,10 +1292,17 @@ template {
     font-size: 16px;
     line-height: 22px;
     margin-right: 11px;
+    margin-left: 0;
+  }
+  .cards {
+    justify-content: space-between;
   }
   .card-item {
     min-height: 234px;
     margin-top: 20px;
+  }
+  .card-item-price {
+    margin-left: 0;
   }
   .card-item__more {
     width: 140px;
@@ -1182,10 +1317,17 @@ template {
     height: 32px;
     margin-bottom: 21px;
   }
+  .card-item__title {
+    margin-left: 0;
+  }
   .card-item-price {
     font-size: 14px;
     line-height: 24px;
     margin-right: 9px;
+  }
+  .card-item__price-block {
+    justify-content: start;
+    align-items: center;
   }
   .card-item__image {
     width: 140px;
@@ -1200,85 +1342,6 @@ template {
   .card-item__cart {
     width: 14px;
     height: 32px;
-  }
-  .reviews-container {
-    max-width: 470px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-container {
-    max-width: 272px;
-    height: 64px;
-    margin-top: 0px;
-  }
-  .banner-wrapper {
-    background-image: url(../img/header-image-320.jpg);
-    background-position: top;
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: 884px;
-  }
-  .banner-info {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 381px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .banner-text__subtitle {
-    margin: auto;
-    margin-bottom: 24px;
-    width: 198px;
-    padding-left: 26px;
-    padding-right: 26px;
-  }
-  .banner-text__title {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
-  .banner-text__description {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 24px;
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .banner__button {
-    margin: auto;
-    max-width: 233px;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 13px 24px;
-    margin-bottom: 22px;
-  }
-  .advantages {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .advantages__item {
-    margin-bottom: 16px;
-  }
-  .advantages__icon {
-    width: 14.7px;
-    height: 14.7px;
-  }
-  .advantages__text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-right: 16px;
-  }
-  .trending-container {
-    padding-bottom: 48px;
-    max-width: 290px;
-  }
-  .card-item__price-block {
-    justify-content: start;
-    align-items: center;
   }
   .reviews-container {
     max-width: 310px;

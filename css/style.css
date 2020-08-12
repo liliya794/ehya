@@ -28,6 +28,14 @@ img {
   max-width: 100%;
 }
 
+.second-heading {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -548,6 +556,79 @@ template {
   color: #183B56;
 }
 
+.collection {
+  padding-top: 120px;
+  padding-bottom: 145px;
+}
+
+.collection-container {
+  display: flex;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.collection-image {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.collection-image__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.collection-image__big {
+  width: 320px;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collection-image__little {
+  width: 320px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collection-info {
+  margin-left: 58px;
+}
+
+.collection-info__text {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  color: #183B56;
+}
+
+.collection-info__description {
+  max-width: 392px;
+  margin-bottom: 32px;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.collection-info__check {
+  color: #1565D8;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.collection-info__icon {
+  margin-left: 30px;
+  width: 13px;
+  height: 16px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -634,6 +715,28 @@ template {
   .banner-wrapper {
     max-width: 992px;
   }
+  .collection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .collection-container {
+    flex-direction: column;
+  }
+  .collection-image {
+    justify-content: center;
+  }
+  .collection-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection-info__text {
+    margin-top: 40px;
+  }
+  .collection-info__description {
+    max-width: 672px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -715,6 +818,16 @@ template {
   .banner-wrapper {
     height: 624px;
   }
+  .collection-container {
+    max-width: 672px;
+  }
+  .collection-info {
+    align-items: start;
+    margin-left: 0;
+  }
+  .collection-image__right {
+    height: 490px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -723,6 +836,23 @@ template {
   }
   .banner-wrapper {
     max-width: 570px;
+  }
+  .collection-container {
+    max-width: 540px;
+  }
+  .collection-image {
+    justify-content: start;
+  }
+  .collection-image__right {
+    height: 403px;
+  }
+  .collection-image__big {
+    width: 260px;
+    height: 403px;
+  }
+  .collection-image__little {
+    width: 250px;
+    height: 185px;
   }
 }
 
@@ -736,6 +866,65 @@ template {
   }
   .advantages__text {
     margin-right: 15px;
+  }
+  .collection {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .collection-container {
+    align-items: center;
+  }
+  .collection-image {
+    flex-direction: column;
+    height: 411px;
+  }
+  .collection-image__right {
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .collection-image__left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .collection-image__big {
+    width: 290px;
+    height: 300px;
+  }
+  .collection-image__little {
+    width: 138px;
+    height: 97px;
+  }
+  .collection-info {
+    align-items: center;
+    margin-left: 0;
+  }
+  .collection-info__text {
+    margin-bottom: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .collection-info__description {
+    max-width: 280px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .collection-info__button {
+    display: flex;
+  }
+  .collection-info__check {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .collection-info__icon {
+    padding-top: 3px;
+    margin-left: 30px;
   }
 }
 

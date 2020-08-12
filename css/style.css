@@ -629,6 +629,130 @@ template {
   height: 16px;
 }
 
+.trending-container {
+  max-width: 1135px;
+  margin: auto;
+  padding-bottom: 145px;
+}
+
+.trending-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trending-info__text {
+  color: #183B56;
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs__item {
+  margin-right: 38px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.tabs__item--active {
+  color: #183B56;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 441px;
+  margin-top: 49px;
+}
+
+.card-item__title {
+  color: #183B56;
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32p;
+}
+
+.card-item__image {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-item__more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+  border-radius: 8px;
+  background-color: #1565D8;
+}
+
+.card-item__more-image {
+  width: 28px;
+  height: 37px;
+  margin-bottom: 25px;
+}
+
+.card-item__more-text {
+  font-family: HKGrotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.card-item__link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card-item__price-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.card-item__cart {
+  width: 23px;
+  height: 32px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;

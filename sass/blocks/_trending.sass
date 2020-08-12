@@ -19,12 +19,17 @@
     list-style-type: none
     padding: 0
     margin: 0
+    &__item
+      display: none
+      &--active
+        display: block
   &__item
     margin-right: 38px
     font-style: normal
     font-weight: normal
     font-size: 18px
     line-height: 25px
+    cursor: pointer
     &--active
       color: $primary
       font-style: normal
@@ -53,6 +58,8 @@
       height: 350px
       object-fit: cover
       border-radius: 8px
+      background-position: top
+      background-repeat: no-repeat
     &__more
       display: flex
       align-items: center

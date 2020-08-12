@@ -659,12 +659,21 @@ template {
   margin: 0;
 }
 
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item--active {
+  display: block;
+}
+
 .tabs__item {
   margin-right: 38px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
+  cursor: pointer;
 }
 
 .tabs__item--active {
@@ -701,6 +710,8 @@ template {
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .card-item__more {
@@ -861,6 +872,17 @@ template {
     max-width: 672px;
     margin-bottom: 30px;
   }
+  .trending-container {
+    max-width: 950px;
+  }
+  .card-item__image {
+    width: 200px;
+    height: 300px;
+  }
+  .card-item__more {
+    width: 200px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -898,6 +920,26 @@ template {
   }
   .advantages__text {
     margin-right: 20px;
+  }
+  .trending-container {
+    padding-bottom: 80px;
+    max-width: 608px;
+  }
+  .trending-info {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .trending-info__text {
+    margin-bottom: 28px;
+  }
+  .card-item__image {
+    width: 280px;
+    height: 350px;
+  }
+  .card-item__more {
+    width: 280px;
+    height: 350px;
   }
 }
 
@@ -978,6 +1020,9 @@ template {
     width: 250px;
     height: 185px;
   }
+  .trending-container {
+    max-width: 570px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1050,6 +1095,55 @@ template {
     padding-top: 3px;
     margin-left: 30px;
   }
+  .trending-container {
+    padding-bottom: 48px;
+    max-width: 320px;
+  }
+  .trending-info__text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .tabs__item {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 11px;
+  }
+  .card-item {
+    min-height: 234px;
+    margin-top: 20px;
+  }
+  .card-item__more {
+    width: 140px;
+    height: 170px;
+  }
+  .card-item__more-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .card-item__more-image {
+    width: 25px;
+    height: 32px;
+    margin-bottom: 21px;
+  }
+  .card-item-price {
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 9px;
+  }
+  .card-item__image {
+    width: 140px;
+    height: 170px;
+    margin-bottom: 13px;
+  }
+  .card-item__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+  .card-item__cart {
+    width: 14px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1117,6 +1211,10 @@ template {
     font-size: 16px;
     line-height: 20px;
     margin-right: 16px;
+  }
+  .trending-container {
+    padding-bottom: 48px;
+    max-width: 290px;
   }
 }
 /*# sourceMappingURL=style.css.map */

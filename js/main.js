@@ -16,4 +16,15 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  var tabsItems = $(".tabs__item");
+  var contentItem = $(".tabs-content__item");
+
+  tabsItems.on("click", function (event) {
+    var activeCotent = $(this).attr("data-target");
+    tabsItems.removeClass("tabs__item--active");
+    contentItem.removeClass("tabs-content__item--active");
+    $(activeCotent).addClass("tabs-content__item--active");
+    $(this).addClass("tabs__item--active");
+  });
 });

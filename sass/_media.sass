@@ -133,7 +133,12 @@
     &-image
       &__right
         height: 490px
-  
+  .reviews
+    &-container
+      max-width: 630px
+    &-slider
+      &__item
+        margin-bottom: 15px
         
 @media ( max-width: 650px )
   .header
@@ -158,6 +163,9 @@
   .trending
     &-container
       max-width: 570px
+  .reviews
+    &-container
+      max-width: 570px
 @media ( max-width: 576px )
   .header
     &-container
@@ -174,7 +182,6 @@
     padding-bottom: 64px
     &-container
       align-items: center
-      // justify-content: center
 
     &-image
       flex-direction: column
@@ -260,6 +267,9 @@
       &__cart
         width: 14px
         height: 32px
+  .reviews
+    &-container
+      max-width: 470px
 @media ( max-width: 480px )
   .header
     &-container
@@ -324,7 +334,35 @@
     &-container
       padding-bottom: 48px
       max-width: 290px
-
+  .card
+    &-item
+      &__price
+        &-block
+          justify-content: start
+          align-items: center
+  .reviews
+    &-container
+      max-width: 310px
+    &-slider
+      &__logo
+        width: 70px
+        height: 81px
+        margin-bottom: 13px
+      &__description
+        // max-width: 280px
+        font-size: 18px
+        line-height: 36px
+        margin-bottom: 24px
+      &__author
+        display: flex
+        margin: auto
+        font-size: 20px
+        line-height: 24px
+        max-width: 171px
+@media ( max-width: 321px )
+  .reviews
+    &-container
+      max-width: 280px
 
       
 

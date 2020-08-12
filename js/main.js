@@ -27,4 +27,30 @@ $(document).ready(function () {
     $(activeCotent).addClass("tabs-content__item--active");
     $(this).addClass("tabs__item--active");
   });
+
+  var mySwiper = new Swiper(".reviews-slider", {
+    // Optional parameters
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: ".reviews-pagination",
+    },
+
+    autoplay: {
+      delay: 7000,
+    },
+    // Остановка слайдера при наведении курсора
+    on: {
+      init() {
+        this.el.addEventListener("mouseenter", () => {
+          this.autoplay.stop();
+        });
+
+        this.el.addEventListener("mouseleave", () => {
+          this.autoplay.start();
+        });
+      },
+    },
+  });
 });

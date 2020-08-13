@@ -53,4 +53,20 @@ $(document).ready(function () {
       },
     },
   });
+
+  var storiesSlider = new Swiper(".stories-slider", {
+    // Optional parameters
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".stories-slider__button--next",
+      prevEl: ".stories-slider__button--prev",
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
 });

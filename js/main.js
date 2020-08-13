@@ -69,4 +69,17 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
+
+  // обработка форм
+  $(".subscribe").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          required: "Field mail is required",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });
 });

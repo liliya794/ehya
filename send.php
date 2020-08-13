@@ -20,7 +20,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -49,5 +49,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-// header('Location: thankyou-subscription.html');
+header('Location: thankyou.html');
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

@@ -32,6 +32,10 @@
       &__image
         width: 290px
         max-height: 317px
+  .newsletter
+    &-info
+      margin-right: 40px
+
       
 
 @media (max-width: 992px)
@@ -162,6 +166,25 @@
       &__link
         &:hover
           color: $blue
+  .newsletter
+    padding-top: 72px
+    padding-bottom: 80px
+    height: 402px
+    margin-top: 80px
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &-info
+      margin-right: 0
+    &__title
+      text-align: center
+      margin-bottom: 14px
+    &__description
+      text-align: center
+      margin-bottom: 56px
+  .subscribe
+    display: flex
+    align-items: center
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -268,13 +291,6 @@
     &-slider
       max-width: 95%
     &-card
-      // min-width: 100%
-      // margin-right: 0
-      // margin-bottom: 24px
-      // &__image
-      //   width: 270px
-      //   height: 277px
-
       &__text
         font-size: 20px
         line-height: 24px
@@ -306,36 +322,12 @@
     &-container
       max-width: 470px
   .stories
-    // &-container
-    //   max-width: 100%
-    //   padding-top: 50px
-    // &-info
-    //   &__title
-    //     font-size: 28px
-    //     line-height: 36px
-    //   &__description
-    //     max-width: 87.5%
-    //     font-size: 16px
-    //     line-height: 28px
     &-slider
-      // max-width: 280px
       &__item
         flex-direction: column
-    // &-card
-    //   min-width: 100%
-    //   margin-right: 0
-    //   margin-bottom: 24px
-    //   &__image
-    //     width: 270px
-    //     height: 277px
-    //   &__info
-    //     width: 270px
-    //   &__text
-    //     font-size: 20px
-    //     line-height: 24px
-    //   &__link
-    //     font-size: 16px
-    //     line-height: 22px
+  .newsletter
+    &__description
+      max-width: 470px
 @media ( max-width: 480px )
   body 
     padding-top: 88px
@@ -354,7 +346,6 @@
       height: 884px
       border-radius: 0
       max-width: 480px
-
     &-info
       display: flex
       text-align: center
@@ -363,7 +354,6 @@
       margin-bottom: 20px
       margin-left: 20px
       margin-right: 20px
-
     &-text
       &__subtitle
         margin: auto
@@ -568,6 +558,33 @@
       &__link
         font-size: 16px
         line-height: 22px
+  .newsletter
+    height: 414px
+    padding-top: 64px
+    padding-bottom: 64px
+    margin-top: 49px
+    &-info
+      align-items: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &__description
+      max-width: 87.5%
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 36px
+  .subscribe
+    position: static
+    flex-direction: column
+    width: 280px
+    height: 48px
+    &__button
+      position: static
+      min-width: 280px
+      padding: 11px 24px
+      border-radius: 8px
+      margin: 10px 0 0 0
 @media ( max-width: 321px )
   .reviews
     &-container

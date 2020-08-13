@@ -968,9 +968,7 @@ template {
 .newsletter-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 213px;
+  justify-content: center;
 }
 
 .newsletter-info {
@@ -978,6 +976,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   max-width: 486px;
+  margin-right: 144px;
 }
 
 .newsletter__title {
@@ -1157,6 +1156,9 @@ template {
     width: 290px;
     max-height: 317px;
   }
+  .newsletter-info {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1311,6 +1313,31 @@ template {
   .stories-card__link:hover {
     color: #1565D8;
   }
+  .newsletter {
+    padding-top: 72px;
+    padding-bottom: 80px;
+    height: 402px;
+    margin-top: 80px;
+  }
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter-info {
+    margin-right: 0;
+  }
+  .newsletter__title {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .newsletter__description {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1463,6 +1490,9 @@ template {
   }
   .stories-slider__item {
     flex-direction: column;
+  }
+  .newsletter__description {
+    max-width: 470px;
   }
 }
 
@@ -1742,6 +1772,39 @@ template {
   .stories-card__link {
     font-size: 16px;
     line-height: 22px;
+  }
+  .newsletter {
+    height: 414px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 49px;
+  }
+  .newsletter-info {
+    align-items: center;
+  }
+  .newsletter__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+  .newsletter__description {
+    max-width: 87.5%;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 36px;
+  }
+  .subscribe {
+    position: static;
+    flex-direction: column;
+    width: 280px;
+    height: 48px;
+  }
+  .subscribe__button {
+    position: static;
+    min-width: 280px;
+    padding: 11px 24px;
+    border-radius: 8px;
+    margin: 10px 0 0 0;
   }
 }
 

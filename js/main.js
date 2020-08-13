@@ -60,8 +60,8 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".stories-slider__button--next",
-      prevEl: ".stories-slider__button--prev",
+      nextEl: ".stories-info__button--next",
+      prevEl: ".stories-info__button--prev",
     },
 
     keyboard: {

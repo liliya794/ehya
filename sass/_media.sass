@@ -23,6 +23,17 @@
       &__more
         width: 234px
         height: 310px
+  .stories
+    &-container
+      max-width: 985px
+    &-card
+      min-width: 300px
+      margin-right: 5px
+      &__image
+        width: 290px
+        max-height: 317px
+      
+
 @media (max-width: 992px)
   .header
     &-container
@@ -107,6 +118,41 @@
       &__more
         width: 280px
         height: 350px
+  .stories
+    &-container
+      max-width: 728px
+      flex-direction: column
+      align-items: center
+      padding-top: 80px
+    &-info
+      align-items: center
+      &__subtitle
+        margin-bottom: 24px
+      &__title
+        max-width: 100%
+        margin-bottom: 16px
+      &__description
+        text-align: center
+        max-width: 510px
+        margin-bottom: 36px
+      &__button
+        margin-bottom: 36px
+    &-slider
+      justify-content: center
+      align-items: center
+      max-width: 88.8%
+      &__item
+        width: 100%
+        justify-content: center
+        align-items: center
+    &-card
+      min-width: 250px
+      margin-right: 18px
+      &__image
+        width: 312px
+        max-height: 317px    
+      &__info
+        width: 312px   
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -177,6 +223,11 @@
         margin-bottom: 35px
       &__logo
         margin-bottom: 0
+  .stories
+    &-card
+      min-width: 300px
+      &__info
+        width: 260px
         
 @media ( max-width: 650px )
   .header
@@ -204,6 +255,23 @@
   .reviews
     &-container
       max-width: 570px
+  .stories
+    &-slider
+      max-width: 95%
+    &-card
+      // min-width: 100%
+      // margin-right: 0
+      // margin-bottom: 24px
+      // &__image
+      //   width: 270px
+      //   height: 277px
+
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__link
+        font-size: 16px
+        line-height: 22px
 @media ( max-width: 576px )
   .header
     &-container
@@ -228,6 +296,37 @@
   .reviews
     &-container
       max-width: 470px
+  .stories
+    // &-container
+    //   max-width: 100%
+    //   padding-top: 50px
+    // &-info
+    //   &__title
+    //     font-size: 28px
+    //     line-height: 36px
+    //   &__description
+    //     max-width: 87.5%
+    //     font-size: 16px
+    //     line-height: 28px
+    &-slider
+      // max-width: 280px
+      &__item
+        flex-direction: column
+    // &-card
+    //   min-width: 100%
+    //   margin-right: 0
+    //   margin-bottom: 24px
+    //   &__image
+    //     width: 270px
+    //     height: 277px
+    //   &__info
+    //     width: 270px
+    //   &__text
+    //     font-size: 20px
+    //     line-height: 24px
+    //   &__link
+    //     font-size: 16px
+    //     line-height: 22px
 @media ( max-width: 480px )
   body 
     padding-top: 88px
@@ -345,7 +444,7 @@
   .trending
     &-container
       max-width: 290px
-      padding-bottom: 48px
+      padding-bottom: 36px
     &-info
       margin-bottom: 17px
       &__text
@@ -399,6 +498,7 @@
   .reviews
     &-container
       max-width: 310px
+      padding-bottom: 56px
     &-slider
       &__logo
         width: 70px
@@ -416,6 +516,49 @@
         max-width: 171px
       &__item
         margin-bottom: -10px
+  .stories
+    &-container
+      max-width: 100%
+      padding-top: 42px
+    &-info
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__description
+        max-width: 87.5%
+        font-size: 16px
+        line-height: 28px
+      &__button
+        width: 48px
+        height: 48px
+        padding: 16px
+        margin-bottom: 16px
+        margin-right: 0
+        &-wrapper
+          align-content: center
+      &__icon
+        width: 13px
+        height: 16px
+    &-slider
+      max-width: 280px
+      &__item
+        flex-direction: column
+    &-card
+      min-width: 100%
+      margin-right: 0
+      margin-bottom: 24px
+      &__image
+        width: 270px
+        height: 277px
+      &__info
+        width: 270px
+        min-height: 150px
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &__link
+        font-size: 16px
+        line-height: 22px
 @media ( max-width: 321px )
   .reviews
     &-container

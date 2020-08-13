@@ -35,8 +35,12 @@
   .newsletter
     &-info
       margin-right: 40px
-
-      
+  .footer
+    &-container
+      padding: 128px 40px 80px 20px
+    &-menu
+      &__column
+        margin-right: 5px
 
 @media (max-width: 992px)
   .header
@@ -185,6 +189,20 @@
   .subscribe
     display: flex
     align-items: center
+  .footer
+    &-info
+      width: 253px
+      margin-right: 0
+    &-container
+      padding: 64px 68px 16px 59px
+    &-menu
+      flex-wrap: wrap
+      &__column
+        margin-right: 0
+        margin-left: 28px
+        margin-bottom: 48px
+    &-block
+      margin-bottom: 0
 @media (max-width: 768px)
   body
     padding-top: 102px
@@ -297,6 +315,16 @@
       &__link
         font-size: 16px
         line-height: 22px
+  .footer
+    &-block
+      flex-direction: column-reverse
+      align-items: center
+    &-info
+      align-items: center
+      &__text
+        text-align: center
+    &-copyright
+      display: none
 @media ( max-width: 576px )
   .header
     &-container
@@ -328,6 +356,33 @@
   .newsletter
     &__description
       max-width: 470px
+  .footer
+    &-container
+      padding: 48px 10px 64px 24px
+    &-menu
+      &__column
+        width: 50%
+        margin-bottom: 30px
+        margin-left: 0
+        margin-right: 0px
+      &__title
+        font-size: 16px
+        line-height: 22px
+      &__items
+        font-size: 14px
+        line-height: 20px
+      &__item
+        margin-top: 15px
+    &-info
+      &__text
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 20px
+      &__logo
+        margin-bottom: 20px
+    &-social
+      &__image
+        margin-right: 3px
 @media ( max-width: 480px )
   body 
     padding-top: 88px

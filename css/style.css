@@ -1195,6 +1195,13 @@ template {
   .stories-info__button {
     margin-bottom: 36px;
   }
+  .stories-info__button:hover {
+    border: 2px solid #959EAD;
+    color: #959EAD;
+  }
+  .stories-info__icon:hover {
+    fill: #959EAD;
+  }
   .stories-slider {
     justify-content: center;
     align-items: center;
@@ -1215,6 +1222,9 @@ template {
   }
   .stories-card__info {
     width: 312px;
+  }
+  .stories-card__link:hover {
+    color: #1565D8;
   }
 }
 

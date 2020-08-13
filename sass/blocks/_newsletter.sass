@@ -1,0 +1,118 @@
+.newsletter
+  height: 338px
+  padding: 100px 0 100px 0
+  margin-top: 140px
+  background-image: url(../img/newsletter.jpg)
+  // Что бы картинка выровнялась по центру 6 строка
+  background-position: center
+  background-repeat: no-repeat
+  // картинка подстраивается под ширину страницы:
+  background-size: cover 
+  &-wrapper 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-left: 150px
+    margin-right: 213px
+  &-info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 486px
+    // margin-right: 144px
+  &__title
+    margin: 0 0 14px 0
+    color: #ffffff
+  &__description
+    color: #ffffff
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    margin: 0
+.subscribe
+  position: relative
+  width: 447px
+  height: 56px
+  border-radius: 8px
+  &__input
+    background-color: #fff
+    background-image: url(../img/mail.svg)
+    background-repeat: no-repeat
+    background-position: left 20px center
+    border-radius: 8px
+    border: none
+    padding-left: 48px
+    padding-top: 17px
+    padding-bottom: 17px
+    height: 100%
+    width: 100%
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+
+    overflow: visible
+  &__button
+    position: absolute
+    min-width: 143px
+    right: 0
+    top: 0
+    height: 48px
+    margin: 4px
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #FFFFFF
+    background-color: $primary
+    // width: 100%
+    // height: 100%
+    // border: none
+    // padding-left: 33px
+      // Что бы текст не заходил на кнопку 65+10=75
+    // padding-right: 75px
+    // font-weight: 300
+    // font-size: 14px
+    // line-height: 18px
+  // &::placeholder
+  //   color: #BDBDBD
+//.subscribe
+//     position: relative
+//     width: 350px
+//     height: 55px
+//     border-radius: 4px
+    
+//     &__input
+//       overflow: visible
+//       width: 100%
+//       height: 100%
+//       border: none
+//       padding-left: 33px
+//       // Что бы текст не заходил на кнопку 65+10=75
+//       padding-right: 75px
+//       font-weight: 300
+//       font-size: 14px
+//       line-height: 18px
+//     &__button
+//       position: absolute
+//       min-width: 65px
+//       right: 0
+//       top: 0
+//       height: 100%
+//       border: none
+//       border-radius: 0 4px 4px 0
+//       background-color: $primary
+//       color: $light
+//       cursor: pointer
+//       font-style: normal
+//       font-weight: bold
+//       font-size: 12px
+//       line-height: 15px
+
+

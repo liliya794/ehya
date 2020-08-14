@@ -8,6 +8,10 @@
   background-repeat: no-repeat
   // картинка подстраивается под ширину страницы:
   background-size: cover 
+  &--m
+    &--0
+      margin: 0
+
   &-wrapper 
     display: flex
     align-items: center
@@ -72,5 +76,25 @@
     background-color: $primary
     &:hover
       background-color: $blue
+    &-thank
+      min-width: 250px
+      height: 48px
+      margin: 4px
+      border: none
+      border-radius: 4px
+      cursor: pointer
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #FFFFFF
+      background-color: $primary
+      &:hover
+        background-color: #11283a
+    &-thanks
+      text-decoration: none
+      color: inherit
+
       
 

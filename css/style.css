@@ -972,6 +972,10 @@ template {
   background-size: cover;
 }
 
+.newsletter--m--0 {
+  margin: 0;
+}
+
 .newsletter-wrapper {
   display: flex;
   align-items: center;
@@ -1049,6 +1053,31 @@ template {
 
 .subscribe__button:hover {
   background-color: #1565D8;
+}
+
+.subscribe__button-thank {
+  min-width: 250px;
+  height: 48px;
+  margin: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #183B56;
+}
+
+.subscribe__button-thank:hover {
+  background-color: #11283a;
+}
+
+.subscribe__button-thanks {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-container {
@@ -1448,6 +1477,9 @@ template {
     margin-bottom: 56px;
   }
   .subscribe__button:hover {
+    background-color: #183B56;
+  }
+  .subscribe__button-thank:hover {
     background-color: #183B56;
   }
   .subscribe {

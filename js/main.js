@@ -56,7 +56,7 @@ $(document).ready(function () {
 
   var storiesSlider = new Swiper(".stories-slider", {
     // Optional parameters
-    loop: true,
+    // loop: true,
 
     // Navigation arrows
     navigation: {

@@ -1,3 +1,11 @@
+@media (min-width: 1441px)
+  .footer
+    &-block
+      justify-content: center
+@media (max-width: 1260px)
+  .newsletter
+    &-wrapper
+      margin-left: 0
 @media (max-width: 1200px)
   .header
     &-container
@@ -9,9 +17,9 @@
       max-width: 992px
   .collection
     &-container
-      max-width: 80%
+      max-width: 85%
     &-image
-      width: 57%
+      width: 52%
   .trending
     &-container
       max-width: 950px
@@ -26,6 +34,8 @@
   .stories
     &-container
       max-width: 985px
+    &-info
+      max-width: 335px
     &-card
       min-width: 300px
       margin-right: 5px
@@ -97,13 +107,15 @@
     padding-bottom: 80px
     &-container
       flex-direction: column
+      max-width: 70%
     &-image
       width: 100%
-      justify-content: center
+      justify-content: start
     &-info
       display: flex
       flex-direction: column
-      align-items: center
+      align-items: start
+      margin-left: 0
       &__text
         margin-top: 40px
       &__description
@@ -138,6 +150,8 @@
       padding-top: 80px
     &-info
       align-items: center
+      max-width: none
+      min-width: 322px
       &__subtitle
         margin-bottom: 24px
       &__title
@@ -205,12 +219,15 @@
     align-items: center
   .footer
     &-info
-      width: 253px
+      width: 45%
       margin-right: 0
     &-container
       padding: 64px 68px 16px 59px
     &-menu
       flex-wrap: wrap
+      &__link
+        &:hover
+          color: $primary
       &__column
         margin-right: 0
         margin-left: 28px
@@ -299,6 +316,23 @@
       margin-left: 12px
       &__info
         width: 94%
+  .footer
+    &-info
+      width: 253px
+@media ( max-width: 765px )
+  .footer
+    &-menu
+      &__column
+        width: 45%
+    &-block
+      flex-direction: column-reverse
+      align-items: center
+    &-info
+      align-items: center
+      &__text
+        text-align: center
+    &-copyright
+      display: none
 @media ( max-width: 700px )
   .stories
     &-card
@@ -335,15 +369,9 @@
     &-card
       min-width: 270px
   .footer
-    &-block
-      flex-direction: column-reverse
-      align-items: center
-    &-info
-      align-items: center
-      &__text
-        text-align: center
-    &-copyright
-      display: none
+    &-menu
+      &__column
+        width: 165px
 @media ( max-width: 576px )
   .header
     &-container
@@ -360,11 +388,63 @@
       max-width: 470px
   .trending
     &-container
-      padding-bottom: 48px
-      max-width: 470px
-
+      max-width: 410px
+      padding-bottom: 36px
+    &-info
+      margin-bottom: 17px
+      &__text
+        // font-size: 28px
+        // line-height: 36px
+        margin-bottom: 22px
+  .tabs
+    &__item
+      // font-size: 16px
+      // line-height: 22px
+      margin-right: 15px
+      margin-left: 0
+      &--up
+        margin-right: 0!important
   .cards
-    justify-content: center
+    justify-content: space-between
+  .card
+    &-item 
+      min-height: 234px
+      margin-top: 20px
+      &-price
+        margin-left: 0
+      &__more 
+        width: 194px
+        height: 254px
+        &-text
+          font-size: 20px
+          line-height: 24px
+        &-image
+          width: 25px
+          height: 25px
+          margin-bottom: 25px
+      &__title
+        margin-left: 0
+        margin-bottom: 0
+      &-price
+        font-size: 14px
+        line-height: 24px
+        margin-right: 9px
+      &__price
+        &-block
+          justify-content: start
+          align-items: center
+          margin-bottom: 7px
+      &__image
+        width: 194px
+        height: 254px
+        margin-bottom: 5px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 0
+      &__cart
+        width: 14px
+        height: 14px
   .reviews
     &-container
       max-width: 470px
@@ -374,6 +454,8 @@
         flex-direction: column
     &-card
       margin-bottom: 24px
+      &__info
+        width: 100%
   .newsletter
     &__description
       max-width: 470px
@@ -519,7 +601,7 @@
   .trending
     &-container
       max-width: 290px
-      padding-bottom: 36px
+      padding-bottom: 48px
     &-info
       margin-bottom: 17px
       &__text
@@ -550,10 +632,11 @@
           line-height: 24px
         &-image
           width: 25px
-          height: 32px
-          margin-bottom: 21px
+          height: 25px
+          margin-bottom: 25px
       &__title
         margin-left: 0
+        margin-bottom: 0
       &-price
         font-size: 14px
         line-height: 24px
@@ -562,17 +645,18 @@
         &-block
           justify-content: start
           align-items: center
+          margin-bottom: 7px
       &__image
         width: 140px
         height: 170px
-        margin-bottom: 13px
+        margin-bottom: 5px
       &__title
         font-size: 16px
         line-height: 20px
         margin-bottom: 0
       &__cart
         width: 14px
-        height: 32px
+        height: 14px
   .reviews
     &-container
       max-width: 310px
@@ -580,8 +664,8 @@
     &-slider
       &__logo
         width: 70px
-        height: 81px
-        margin-bottom: 13px
+        height: 66px
+        margin-bottom: 18px
         margin-left: 10px
         margin-top: 4px
       &__description
@@ -595,7 +679,7 @@
         line-height: 24px
         max-width: 180px
       &__item
-        width: 269px
+        width: 310px
         margin-bottom: 10px
   .stories
     &-container
@@ -679,3 +763,6 @@
   .reviews
     &-container
       max-width: 280px
+    &-slider
+      &__item
+        width: 269px

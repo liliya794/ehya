@@ -51,6 +51,7 @@
   .footer
     &-container
       padding: 128px 40px 80px 20px
+      align-items: center
     &-menu
       &__column
         margin-right: 5px
@@ -230,7 +231,7 @@
           color: $primary
       &__column
         margin-right: 0
-        margin-left: 24px
+        margin-left: 27px
         margin-bottom: 31px
     &-block
       margin-bottom: 9px
@@ -320,6 +321,10 @@
     &-info
       width: 253px
 @media ( max-width: 765px )
+  .stories
+    &-card
+      &__info
+        width: 100%
   .footer
     &-menu
       &__column
@@ -686,6 +691,7 @@
       max-width: 100%
       padding-top: 42px
     &-info
+      min-width: 320px
       &__title
         font-size: 28px
         line-height: 36px
@@ -766,3 +772,7 @@
     &-slider
       &__item
         width: 269px
+@media ( max-width: 319px )
+  .stories
+    &-info
+      min-width: 98%
